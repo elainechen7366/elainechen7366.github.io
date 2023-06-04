@@ -18,11 +18,12 @@
 
   footer {
     @include clearfix;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
     max-width: 100%;
-    padding: 0 1em 2em;
+    padding: 0 1em 1.3em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -48,7 +49,7 @@
 
 .page__footer-copyright {
   font-family: $global-font-family;
-  font-size: $type-size-7;
+  font-size: $type-size-8;
 }
 
 .page__footer-follow {
