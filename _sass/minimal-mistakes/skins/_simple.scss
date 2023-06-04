@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Simple skin / fine-tune by Elaine
+   ========================================================================== */
+
+/* Colors */
+$background-color: #f0f0f0 !default;
+$text-color: #2e2e2e !default;
+$muted-text-color: #393e46 !default;
+$primary-color: #5c87b0 !default;
+$border-color: $background-color !default;
+$footer-background-color: $background-color !default;
+$link-color: mix(#ffffff, $primary-color, 10%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+/* cozy syntax highlighting (base16) */
+$base00: #ffffff !default;
+$base01: #1e56c6 !default;
+$base02: #0a57ca !default;
+$base03: #0f890f !default;
+$base04: #979588 !default; 
+$base05: #373737 !default; 
+$base06: #951c1c !default;
+$base07: #930707 !default;
+$base08: #cc6666 !default;
+$base09: #3b5bc3 !default; 
+$base0a: #251f79 !default; 
+$base0b: #b55353 !default; 
+$base0c: #5b8ab3 !default; 
+$base0d: #8c6338 !default;
+$base0e: #744383 !default; 
+$base0f: #812008 !default;
+
+.page__footer {
+  color: $primary-color !important; // override
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
