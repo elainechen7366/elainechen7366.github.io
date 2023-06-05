@@ -10,12 +10,16 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  font-size: 0.9rem;
 
   &__inner-wrap {
     @include clearfix;
+    padding-top: 1.5em;
+    padding-bottom: 2.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -35,7 +39,7 @@
 
     a {
       text-decoration: none;
-      letter-spacing: 4px;
+      letter-spacing: 2px;
     }
   }
 }
