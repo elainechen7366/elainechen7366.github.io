@@ -242,7 +242,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        height: 4px;
+        height: 1.8px;
         background: $primary-color;
         width: 100%;
         -webkit-transition: $global-transition;
@@ -515,6 +515,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
+    letter-spacing: 0.3px;
     background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
