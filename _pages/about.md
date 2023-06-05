@@ -1,6 +1,6 @@
 ---
-title: "About"
+layout: single
 permalink: /about/
-layout: posts
-author_profile: true
+title: ABOUT
+classes: wide
 ---

@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "HOME"
-    url: /home/
+    url: /index.html
   - title: "BLOG"
     url: /blog/
   - title: "CERTIFICATES"
