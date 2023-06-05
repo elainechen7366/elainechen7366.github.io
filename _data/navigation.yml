@@ -1,8 +1,12 @@
 # main links
 main:
-  - title: "Notes"
-    url: /notes/
-  - title: "About"
+  - title: "HOME"
+    url: /home/
+  - title: "BLOG"
+    url: /blog/
+  - title: "CERTIFICATES"
+    url: /certificates/
+  - title: "ABOUT"
     url: /about/
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
