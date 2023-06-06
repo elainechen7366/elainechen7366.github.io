@@ -50,7 +50,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: $type-size-5;
-
+  a {
+    text-decoration: none;
+  }
   a[rel="permalink"]::before {
     content: '';
     position: absolute;
