@@ -515,6 +515,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
+    font-family: $hint-font-family;
     letter-spacing: 0.3px;
     background: $primary-color;
     border-top-left-radius: $border-radius;
@@ -532,23 +533,28 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
+  font-family: $hint-font-family;
+  font-size: $type-size-5;
 
   @include breakpoint($large) {
-    font-size: $type-size-7;
+    font-size: $type-size-5;
   }
 
   a {
     display: block;
     padding: 0.25rem 0.75rem;
     color: $muted-text-color;
-    font-weight: bold;
+    //font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
 
     &:hover {
       color: $text-color;
     }
+  }
+
+  li ul {
+    font-size: 1rem; // no nested text size in toc__menu
   }
 
   li ul > li a {

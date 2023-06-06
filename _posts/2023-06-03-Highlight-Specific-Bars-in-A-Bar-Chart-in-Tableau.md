@@ -3,7 +3,7 @@ layout: single
 title:  "Highlight Specific Bars in A Bar Chart in Tableau"
 date:   2023-06-03
 toc: true
-toc_label: "Content"
+toc_label: "CONTENT"
 toc_icon: "columns"
 toc_sticky: true
 categories: 
