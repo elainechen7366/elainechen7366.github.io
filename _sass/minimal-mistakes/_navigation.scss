@@ -120,21 +120,29 @@
   /* next/previous buttons */
   &--pager {
     display: block;
-    padding: 1em 2em;
+    //padding: 1em 2em;
     float: left;
     width: 50%;
-    font-family: $sans-serif;
-    font-size: $type-size-5;
+    font-family: $global-font-family;
+    font-size: $type-size-6;
     font-weight: bold;
-    text-align: center;
-    text-decoration: none;
+    //text-align: center;
+    text-transform: uppercase;
     color: $muted-text-color;
-    border: 1px solid mix(#000, $border-color, 25%);
+    border: none;
     border-radius: $border-radius;
 
-    &:hover {
-      @include yiq-contrasted($muted-text-color);
+    &.prev {
+      text-align: left;
     }
+
+    &.next {
+      text-align: right;
+    }
+
+    // &:hover {
+    //   @include yiq-contrasted($muted-text-color);
+    // }
 
     &:first-child {
       border-top-right-radius: 0;
