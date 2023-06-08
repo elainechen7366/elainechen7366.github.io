@@ -165,17 +165,26 @@ if (sum(is.na(minute_intensities_narrow)) != 0) {
 ```
 ### SCSS
 ```scss
-p > code,
-a > code,
-li > code,
-td > code {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  font-size: 0.9em;
-}
-@include breakpoint($x-large) {
+#main {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 0.15s;
+
+  @include breakpoint($x-large) {
     max-width: $max-width;
+  }
+  &.disabled {
+    input,
+    button,
+    textarea,
+    label {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+  }
 }
+
 ```
 ## Others
 
