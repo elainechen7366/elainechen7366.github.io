@@ -3,7 +3,7 @@ layout: single
 title:  "Highlight Specific Bars in A Bar Chart in Tableau"
 excerpt: "How to highlight any bar you want in a bar chart"
 header:
-  teaser:
+  teaser: assets/images/thumbnails/tableau.png
 date:   2023-06-03
 toc: true
 toc_label: "CONTENT"
