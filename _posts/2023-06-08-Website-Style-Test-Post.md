@@ -13,7 +13,7 @@ categories: blog
 tags: Jekyll
 ---
 ## What Is This Post For? 
-When I tried to create my own skin with the minimal-mistakes Jekyll theme, I found out that I have to collect posts from others to ensure the inclusion of all styles. At the moment, I really hope there's a post for me to conveniently review the configuration of the new skin. That's why I create this post.
+When I tried to create my own skin of the minimal-mistakes Jekyll theme, I found out that I have to collect posts from others to ensure the inclusion of all styles. At the moment, I really hope there's a post for me to conveniently review the configuration of the new skin. That's why I create this post.
 
 >Since this article is used for checking the look of skin mainly, I extract articles about Adelie Penguin in Wikipedia.
 
@@ -38,7 +38,8 @@ Adélie penguins obtain their food by both predation and foraging, `with a diet 
 ![Adélie](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg/1280px-Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg)
 
 ### Taxonomy And Systematics
-The first Adélie penguin specimens were collected by crew members of French explorer Jules Dumont d'Urville on his expedition to Antarctica in the late 1830s and early 1840s. Jacques Bernard Hombron and Honoré Jacquinot, two French surgeons who doubled as naturalists on the journey, described the bird for science in 1841, giving it the scientific name Catarrhactes adeliæ.[^1]
+The first Adélie penguin specimens were collected by crew members of French explorer Jules Dumont d'Urville on his expedition to Antarctica in the late 1830s and early 1840s. Jacques Bernard Hombron and Honoré Jacquinot, two French surgeons who doubled as naturalists on the journey, described the bird for science in 1841, giving it the scientific name Catarrhactes adeliæ.[^1]\
+The Adélie penguin is one of three species now assigned to the genus Pygoscelis. DNA evidence suggests the Pygoscelis lineage diverged from that of other penguin species some 38 million years ago, roughly 2 million years after the ancestors of the genus Aptenodytes diverged. 
 
 [^1]: [Hombron & Jacquinot 1841](https://en.wikipedia.org/wiki/Ad%C3%A9lie_penguin#CITEREFHombronJacquinot1841), p. 320.
 
@@ -62,7 +63,8 @@ Kelp gulls and snowy sheathbills also prey on chicks and eggs.
 
 
 ## Status
-A comprehensive census of the global Adélie penguin population was carried out in 2014 using analysis of high-resolution satellite images in combination with actual field surveys. The researchers looked for guano-discoloured coastal areas (red/brown patches in areas with no snow) in the satellite images, and augmented their findings with field surveys in areas where no good satellite images were available or where the presence of multiple penguins species was suspected. The results of field surveys were only used if they had been done within the previous four years.
+A comprehensive census of the global Adélie penguin population was carried out in 2014 using analysis of high-resolution satellite images in combination with actual field surveys. \
+The researchers looked for guano-discoloured coastal areas (red/brown patches in areas with no snow) in the satellite images, and augmented their findings with field surveys in areas where no good satellite images were available or where the presence of multiple penguins species was suspected. The results of field surveys were only used if they had been done within the previous four years.
 
 
 ## Code Block
@@ -186,6 +188,45 @@ if (sum(is.na(minute_intensities_narrow)) != 0) {
 }
 
 ```
+
+## Tutorial
+### Part 1
+- Download Favicon package and copy the HTML code
+  ![](https://live.staticflickr.com/65535/52959335268_8cae173fee_k.jpg)
+- Extract the package in the root folder of the site
+- Paste the HTML code in `_includes/head/custom.html`
+  ![](https://live.staticflickr.com/65535/52958899286_9fbf693c24_k.jpg)
+- Run the local server and check if the icon showed on the tab
+  ![](https://live.staticflickr.com/65535/52958914586_3ade90a83a_h.jpg)
+
+### Part 2
+- [Use Google Fonts API](https://developers.google.com/fonts/docs/getting_started#overview)
+
+```html
+<link href='https://fonts.googleapis.com/css?family=Font+Name' 
+      rel='stylesheet' type='text/css'>
+```
+
+- Replace `Font+Name` in the link above with the font family you choose
+
+```html
+<!-- For example, if I choose the font named "Abel" -->
+<link href='https://fonts.googleapis.com/css?family=Abel' 
+      rel='stylesheet' type='text/css'>
+```
+
+- Insert the font name in the system typefaces block in `_variables.scss` presented as follows
+
+```scss
+$sans-serif: -apple-system, BlinkMacSystemFont, "Abel", "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+```
+
+**Note:** You can also use [Google Fonts](https://fonts.google.com/) to pick your favoriate font family. It provides font categories filter.\
+![](https://live.staticflickr.com/65535/52961167370_a50a3befb4_h.jpg")
+{: .notice--primary}
+
+
 ## Others
 
 | Name        | Contact           | Note  |
