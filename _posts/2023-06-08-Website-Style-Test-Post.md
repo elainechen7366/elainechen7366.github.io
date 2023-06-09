@@ -13,7 +13,7 @@ categories: blog
 tags: Jekyll
 ---
 ## What Is This Post For? 
-When I tried to create my own skin of the minimal-mistakes Jekyll theme, I found out that I have to collect posts from others to ensure the inclusion of all styles. At the moment, I really hope there's a post for me to conveniently review the configuration of the new skin. That's why I create this post.
+When tweaking the setting of a new skin for the minimal-mistakes Jekyll theme, I found out that I have to collect posts from varous sources to ensure the inclusion of all styles for testing. At the moment, I really hope there's a post for me to conveniently review the configuration of the new skin. That's why I create this post.
 
 >Since this article is used for checking the look of skin mainly, I extract articles about Adelie Penguin in Wikipedia.
 
