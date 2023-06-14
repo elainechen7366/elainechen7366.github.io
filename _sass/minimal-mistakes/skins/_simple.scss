@@ -32,10 +32,6 @@ $base0d: #8c6338 !default;
 $base0e: #744383 !default; 
 $base0f: #812008 !default;
 
-.page__footer {
-  color: $primary-color !important; // override
-}
-
 .page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
 }
