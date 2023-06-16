@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cute Font">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darumadrop One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hubballi">
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        max-width: 400px;
+        padding: 20px;
+        color:#000000;
+    }
+
+    .container h1 {
+        font-size: 150px;
+        font-family: "Cute Font";
+    }
+
+    .container p {
+        margin-top: -100px;
+        letter-spacing: 1.3px;
+        font-size: 30px;
+        text-transform: uppercase; 
+        font-family: "Darumadrop One";
+    }
+
+    .button {
+        display: block;
+        margin-top: 10px;
+        border: 2px solid #000000; 
+        background-color: #ffffff;
+        display: inline-block; 
+        margin: 0 0 1rem 0; 
+        padding: 10px 28px 10px 28px;
+        font-size: 16px; 
+        font-family: "Hubballi";
+        letter-spacing: 1.3px;
+        text-decoration: none; 
+        text-transform: uppercase; 
+        border-radius: 3px;
+    }
+
+    .button:hover {
+        background-color: #000000;
+        color: #f0f0f0;
+    }
+
+    .errbox {
+        animation: glitch 1s linear infinite;
+    }
+    .errbox:before,
+    .errbox:after {
+        content: attr(title);
+        position: absolute;
+        left: 0;
+    }
+
+    .errbox:before {
+        animation: glitchTop 1s linear infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    }
+
+    .errbox:after {
+        animation: glitchBotom 1.5s linear infinite;
+        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    }
+
+    @keyframes glitch {
+        2%,64% {
+            transform: translate(2px,0) skew(0deg);
+        }
+        4%,60% {
+            transform: translate(-2px,0) skew(0deg);
+        }
+        62% {
+            transform: translate(0,0) skew(5deg); 
+        }
+    }
+
+    @keyframes glitchTop {
+        2%,64% {
+            transform: translate(2px,-2px);
+        }
+        4%,60% {
+            transform: translate(-2px,2px);
+        }
+        62% {
+            transform: translate(13px,-1px) skew(-13deg); 
+        }
+    }
+
+    @keyframes glitchBotom {
+        2%,64% {
+            transform: translate(-2px,0);
+        }
+        4%,60% {
+            transform: translate(-2px,0);
+        }
+        62% {
+            transform: translate(-22px,5px) skew(21deg); 
+        }
+    }
+
+
+    @media (max-width: 600px) {
+      /* Adjustments for mobile devices */
+      .container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="errbox">
+        <h1>404</h1>
+    </div>
+    <p>Oops! Page not found</p>
+    <a class="button" href="https://www.elainesnote.com">Let's Go Home</a>
+  </div>
+</body>
+</html>
