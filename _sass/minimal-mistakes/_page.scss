@@ -35,6 +35,79 @@ body {
   flex: 1 0 auto;
 }
 
+.page-x-wide {
+  @include breakpoint($large) {
+    float: right;
+    padding-right: $right-sidebar-width-narrow + 120px;
+    width: calc(100% - 120px);
+  }
+  @include breakpoint($x-large) {
+    padding-right: $right-sidebar-width + 120px;
+    width: calc(100% - 120px);
+  }
+}
+
+.page-path {
+  font-size: 0.8em;
+  font-family: $serif;
+  font-weight: bold;
+  margin: 1em auto 1em auto;
+  text-transform: capitalize;
+  a {
+    text-decoration: none;
+  }
+}
+
+.header-box {
+  padding: 80px 0;
+  margin: auto;
+  margin-bottom: 2.5em;
+  text-align: left;
+  
+  @include breakpoint($large) {
+    float: right;
+    padding-right: 60px;
+    width: calc(100% - 120px);
+  }
+  @include breakpoint($x-large) {
+    padding-right: 60px;
+    width: calc(100% - 120px);
+  }
+  
+  .title {
+    font-size: 2em;
+    line-height: 1.3em;
+    padding-bottom: -2em;
+    text-align: left;
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: 0.8em;
+    color: $gray;
+    font-family: $serif;
+    margin-bottom: -0.2em;
+  }
+  
+  hr {
+    width: 3.5%;
+    border-color: $primary-color;
+    border-width: 8px;
+    margin-bottom: 1em;
+  }
+}
+
+.page-sub-title {
+  color: $gray;
+  font-size: 1.2em;
+  font-family: $sans-serif;
+  margin-bottom: 1em;
+  max-width: 400px;
+}
+
 .page {
   @include breakpoint($large) {
     float: right;
