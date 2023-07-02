@@ -5,7 +5,6 @@ subtitle: "List frequently used settings"
 excerpt: "This post is for a quick check of most of the styles that may appear in an article"
 header:
   teaser: assets/images/thumbnails/color.png
-  image: 
 date:   2023-06-08
 last_modified_at: 2023-06-11
 toc: true
