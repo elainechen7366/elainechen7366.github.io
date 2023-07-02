@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "Customize Personal Website with Minimal Mistakes Jekyll Theme - v1.0"
+subtitle: "Enable default settings and adjust new looks"
 excerpt: "What I have done at tag v1.0"
 header:
   teaser: assets/images/thumbnails/mm.png
@@ -11,6 +12,7 @@ toc_icon: "columns"
 toc_sticky: true
 categories: blog
 tags: Jekyll
+page_author: true
 ---
 <!-- #pic: a0002-->
 This site is built with one of the popular Jekyll themes - [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/). Thanks to [Michael Rose](https://github.com/mmistakes) and all the other contributors for making and incremental improving this amazing theme which is well-structured not only in code but also in the look of the site. Also, they provide clear and adequate instructions on customizing the theme according to the theme's parameters and layout, such as this [configuration page](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).

@@ -11,6 +11,7 @@ toc_icon: "columns"
 toc_sticky: true
 categories: blog
 tags: Tableau
+page_author: true
 ---
 
 <!-- #pic: a0001-->

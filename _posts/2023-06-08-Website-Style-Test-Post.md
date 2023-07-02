@@ -1,16 +1,20 @@
 ---
 layout: single
 title:  "Website Style Test Post"
+subtitle: "List frequently used settings"
 excerpt: "This post is for a quick check of most of the styles that may appear in an article"
 header:
   teaser: assets/images/thumbnails/color.png
+  image: 
 date:   2023-06-08
+last_modified_at: 2023-06-11
 toc: true
 toc_label: "CONTENT"
 toc_icon: "columns"
 toc_sticky: true
 categories: blog
-tags: Jekyll
+tags: Jekyll 
+page_author: true
 ---
 ## What Is This Post For? 
 When tweaking the setting of a new skin for the minimal-mistakes Jekyll theme, I found out that I have to collect posts from varous sources to ensure the inclusion of all styles for testing. At the moment, I really hope there's a post for me to conveniently review the configuration of the new skin. That's why I create this post.
