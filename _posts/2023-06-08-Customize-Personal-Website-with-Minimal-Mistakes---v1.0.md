@@ -1,7 +1,6 @@
 ---
 layout: single
 title:  "Customize Personal Website with Minimal Mistakes Jekyll Theme - v1.0"
-subtitle: "Enable default settings and adjust new looks"
 excerpt: "What I have done at tag v1.0"
 header:
   teaser: assets/images/thumbnails/mm.png

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Website Style Test Post"
-subtitle: "List frequently used settings"
+subtitle: "Test how subtitle looks like"
 excerpt: "This post is for a quick check of most of the styles that may appear in an article"
 header:
   teaser: assets/images/thumbnails/color.png
