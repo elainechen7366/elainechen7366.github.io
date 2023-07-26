@@ -1,12 +1,12 @@
 {% if page.previous or page.next %}
   <nav class="pagination">
     {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager prev" title="{{ page.previous.title | markdownify | strip_html }}"><i class="fas fa-angle-double-left"></i>  {{ site.data.ui-text[site.locale].pagination_previous | default: "Prev" }} {{ ":" }} {{ page.title }}</a>
+      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager prev" title="{{ page.previous.title | markdownify | strip_html }}"><i class="fas fa-angle-double-left"></i>  {{ site.data.ui-text[site.locale].pagination_previous | default: "Prev" }} {{ "<br>" }} {{ page.title }}</a>
     {% else %}
       <a href="#" class="pagination--pager prev disabled"><i class="fas fa-angle-double-left"></i>  {{ site.data.ui-text[site.locale].pagination_previous | default: "Prev" }}</a>
     {% endif %}
     {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" class="pagination--pager next" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }} {{ ":" }} {{ page.title }} <i class="fas fa-angle-double-right"></i></a>
+      <a href="{{ page.next.url | relative_url }}" class="pagination--pager next" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }} <i class="fas fa-angle-double-right"></i> {{ "<br>" }}  {{ page.title }} </a>
     {% else %}
       <a href="#" class="pagination--pager next disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }} <i class="fas fa-angle-double-right"></i></a>
     {% endif %}
